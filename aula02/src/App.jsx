@@ -32,6 +32,7 @@ export default function App() {
 
             <div className="card">
                 <h3>Chamada para o Exercício 3</h3>
+                
                 <Exercicio3 nota1="7.5" nota2="9.5" />
                 <Exercicio3 nota1="3" nota2="6.5" />
 
