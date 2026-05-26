@@ -6,7 +6,7 @@ export default function Exercicio5 ( {consultas} )
 
     return(
         <div>
-            Para {consultas} consultas: Salário Bruto = R${salbruto}, INSS = R${inss}, Salário Líquido = R${salliq}.
+            Para {consultas} consultas: Salário Bruto = R${salbruto.toFixed(2)}, INSS =R${inss.toFixed(2)}, Salário Líquido = R${salliq.toFixed(2)}.
         </div>
     )
 }
