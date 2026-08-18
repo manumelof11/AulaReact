@@ -53,6 +53,13 @@ export default function Home()
                 <h3>Região Nordeste</h3>
                 <li><Link to="/estados/al">Alagoas</Link></li>
                 <li><Link to="/estados/ba">Bahia</Link></li>
+                <li><Link to="/estados/ce">Ceará</Link></li>
+                <li><Link to="/estados/ma">Maranhão</Link></li>
+                <li><Link to="/estados/pb">Paraíba</Link></li>
+                <li><Link to="/estados/pe">Pernambuco</Link></li>
+                <li><Link to="/estados/pi">Piauí</Link></li>
+                <li><Link to="/estados/rn">Rio Grande do Norte</Link></li>
+                <li><Link to="/estados/se">Sergipe</Link></li>
             </div>
 
         </div>
