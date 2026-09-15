@@ -1,22 +1,20 @@
 import {Link} from "react-router-dom";
 import { useState } from "react";
 
-export default function Exercicio1()
+export default function Exercicio4()
 {
-    const[numero, setNumero] = useState();
+    const[base, setBase] = useState();
+    const[altura, setAltura] = useState();
     const[resultado, setResultado] = useState();
 
     function calcular()
     {
-        let quadrado, cubo;
-        quadrado = Number(numero) * Number(numero);
-        cubo = Number(numero) * Number(numero) * Number(numero);
+        let area;
+        area = Number(base) * Number(altura) /2
 
-        //exibindo o resultado na variável resultado
         setResultado(
             <div>
-                {numero}<sup>2</sup> = {quadrado} <br />
-                {numero}<sup>3</sup> = {cubo}
+                <p>A área do triângulo é: {area}</p>
             </div>
         );
     }
@@ -24,16 +22,22 @@ export default function Exercicio1()
     return (
         <div>
 
-            <h1>Exercício 1</h1>
+            <h1>Exercício 4</h1>
 
             <div className="conteudo">
                 <form>
                     <p>
-                        Digite um número qualquer: <br />
+                        Digite o valor da base do triângulo: <br />
                         <input type="text"
-                            value={numero}
-                            onChange={ (e) => setNumero(e.target.value) }
-                        />
+                            value={base}
+                            onChange={ (e) => setBase(e.target.value) } />
+                    </p>
+
+                    <p>
+                         Digite o valor da altura do triângulo: <br />
+                        <input type="text"
+                            value={altura}
+                            onChange={ (e) => setAltura(e.target.value) } />
                     </p>
 
                     <p>

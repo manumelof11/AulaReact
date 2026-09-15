@@ -1,22 +1,19 @@
 import {Link} from "react-router-dom";
 import { useState } from "react";
 
-export default function Exercicio1()
+export default function Exercicio5()
 {
-    const[numero, setNumero] = useState();
+    const[lado, setLado] = useState();
     const[resultado, setResultado] = useState();
 
     function calcular()
     {
-        let quadrado, cubo;
-        quadrado = Number(numero) * Number(numero);
-        cubo = Number(numero) * Number(numero) * Number(numero);
+        let area;
+        area = Number(lado) * Number(lado)
 
-        //exibindo o resultado na variável resultado
         setResultado(
             <div>
-                {numero}<sup>2</sup> = {quadrado} <br />
-                {numero}<sup>3</sup> = {cubo}
+                <p>A área do quadadro é: {area}</p>
             </div>
         );
     }
@@ -24,15 +21,15 @@ export default function Exercicio1()
     return (
         <div>
 
-            <h1>Exercício 1</h1>
+            <h1>Exercício 5</h1>
 
             <div className="conteudo">
                 <form>
                     <p>
-                        Digite um número qualquer: <br />
+                        Digite o valor do lado do quadrado: <br />
                         <input type="text"
-                            value={numero}
-                            onChange={ (e) => setNumero(e.target.value) }
+                            value={lado}
+                            onChange={ (e) => setLado(e.target.value) }
                         />
                     </p>
 
